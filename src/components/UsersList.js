@@ -3,7 +3,7 @@ import usePagination from '../hooks/usePagination';
 
 const UsersList = () => {
   const { data, loading, error, currentPage, totalPages, goToPage } = usePagination(
-    'https://api.zippopotam.us/us/33162', // API URL ที่ใช้
+    'https://api.zippopotam.us/us/33162', // API URL ที่ใช้ (เป็น API Free)
     1 // จำนวนรายการต่อหน้า (เนื่องจาก API ส่งมาแค่ 1 ข้อความ)
   );
 
