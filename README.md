@@ -2,9 +2,9 @@
 This is an example project that demonstrates how to implement pagination in a React app using a custom hook. The app fetches data from the `https://api.zippopotam.us/us/33162` API, which provides information about a specific US zip code. The app simulates pagination functionality by allowing the user to navigate through multiple pages of data.
 
 ### Features
-- Custom pagination using a React hook (`usePagination`)
-- Fetching zip code information from the `https://api.zippopotam.us/us/33162` API
-- Simulated pagination with "Previous" and "Next" buttons to navigate through data pages
+- Custom pagination using a React hook (`usePagination`).
+- Fetching zip code information from the `https://api.zippopotam.us/us/33162` API.
+- Simulated pagination with "Previous" and "Next" buttons to navigate through data pages.
   
 ### Installation
 
