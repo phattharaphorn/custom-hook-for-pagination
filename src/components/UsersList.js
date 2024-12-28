@@ -3,8 +3,8 @@ import usePagination from '../hooks/usePagination';
 
 const UsersList = () => {
   const { data, loading, error, currentPage, totalPages, goToPage } = usePagination(
-    'https://api.zippopotam.us/us/33162', // API URL ที่ใช้ (เป็น API Free)
-    1 // จำนวนรายการต่อหน้า (เนื่องจาก API ส่งมาแค่ 1 ข้อความ)
+    'https://api.zippopotam.us/us/33162', // API Free
+    1 
   );
 
   if (loading) return <p>Loading...</p>;
@@ -12,10 +12,9 @@ const UsersList = () => {
 
   return (
     <div>
-      <p>{data?.fact}</p> {/* แสดงข้อความจาก API */}
+      <p>{data?.fact}</p>
 
       <div>
-        {/* ปุ่ม Previous และ Next สำหรับเปลี่ยนหน้า */}
         <button onClick={() => goToPage(currentPage - 1)} disabled={currentPage <= 1}>
           Previous
         </button>
